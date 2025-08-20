@@ -837,24 +837,72 @@ main {
   }
 }
 
-@media (max-width: 480px) {
+/* Mobile-first responsive design for all phone screens */
+@media (max-width: 768px) {
+  /* General mobile improvements for all phone sizes */
+  .container {
+    padding: 0 20px;
+  }
+  
+  /* Header mobile improvements */
+  .header {
+    padding: 0.8rem 0;
+  }
+  
+  .logo-img {
+    height: 36px;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  
+  .navigation {
+    gap: 1.2rem;
+  }
+  
+  .navigation a {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Main content spacing */
+  main {
+    margin-top: 65px;
+  }
+  
+  /* Hero section mobile improvements */
+  .hero {
+    padding: 7rem 0 4rem 0;
+    min-height: 85vh;
+  }
+  
   .hero h2 {
     font-size: 2rem;
   }
   
   .cta-button {
-    padding: 1rem 2rem;
+    padding: 0.9rem 1.8rem;
     font-size: 1rem;
   }
   
-  .icon-img {
-    width: 36px;
-    height: 36px;
+  /* About Jack section mobile improvements */
+  .about-jack {
+    padding: 3.5rem 0;
   }
   
-  .feature-box .icon-img {
-    width: 24px;
-    height: 24px;
+  .about-jack h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .about-jack h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .about-content {
+    gap: 2.5rem;
   }
   
   .jack-image img {
@@ -862,12 +910,504 @@ main {
     height: 200px;
   }
   
+  .jack-story p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+  
+  .jack-features {
+    gap: 1.8rem;
+    margin-top: 2rem;
+  }
+  
+  .feature-box {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .feature-box span {
+    font-size: 0.95rem;
+  }
+  
+  .feature-box .icon-img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Features section mobile improvements */
+  .features {
+    padding: 3.5rem 0;
+  }
+  
+  .features h2 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .features p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .name-meaning {
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .name-meaning p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
   .features-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .feature-card {
+    padding: 2rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .icon-img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 1rem;
+  }
+  
+  /* How It Works section mobile improvements */
+  .how-it-works {
+    padding: 3.5rem 0;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .how-it-works p {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .timeline {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .timeline-step {
+    padding: 2rem;
+  }
+  
+  .step-number {
+    width: 55px;
+    height: 55px;
+    font-size: 1.3rem;
+  }
+  
+  .timeline-step h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .timeline-step p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .how-it-works-blurb {
+    margin-top: 2.5rem;
+    padding: 2rem;
+  }
+  
+  .how-it-works-blurb p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  /* Testimonials section mobile improvements */
+  .testimonials {
+    padding: 3.5rem 0;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .testimonials p {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .testimonials-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .single-photo {
+    height: 300px;
+  }
+  
+  .testimonial-text {
+    padding: 2rem;
+  }
+  
+  .testimonial-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+  
+  .testimonial-text .author {
+    font-size: 0.95rem;
+  }
+  
+  /* Contact section mobile improvements */
+  .contact {
+    padding: 3.5rem 0;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  
+  .contact-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    min-width: 220px;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info img {
+    max-width: 220px;
+    height: auto;
+  }
+  
+  /* Footer mobile improvements */
+  .footer {
+    padding: 2.5rem 0;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Additional adjustments for smaller phones (≤ 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .header {
+    padding: 0.75rem 0;
+  }
+  
+  .logo-img {
+    height: 32px;
+  }
+  
+  .logo h1 {
+    font-size: 1.4rem;
+  }
+  
+  .navigation {
     gap: 1rem;
+  }
+  
+  .navigation a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  main {
+    margin-top: 60px;
+  }
+  
+  .hero {
+    padding: 6rem 0 3rem 0;
+    min-height: 80vh;
+  }
+  
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cta-button {
+    padding: 0.8rem 1.6rem;
+    font-size: 0.95rem;
+  }
+  
+  .about-jack {
+    padding: 3rem 0;
+  }
+  
+  .about-jack h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-jack h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-content {
+    gap: 2rem;
+  }
+  
+  .jack-image img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .jack-story p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .jack-features {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .feature-box {
+    padding: 1.2rem;
+    gap: 0.8rem;
+  }
+  
+  .feature-box span {
+    font-size: 0.9rem;
+  }
+  
+  .feature-box .icon-img {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .features {
+    padding: 3rem 0;
+  }
+  
+  .features h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .features p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .name-meaning {
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .name-meaning p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .features-grid {
+    gap: 1.2rem;
   }
   
   .feature-card {
     padding: 1.5rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .feature-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .icon-img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .how-it-works {
+    padding: 3rem 0;
+  }
+  
+  .how-it-works h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .how-it-works p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .timeline {
+    gap: 1.5rem;
+  }
+  
+  .timeline-step {
+    padding: 1.5rem;
+  }
+  
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .timeline-step h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .timeline-step p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .how-it-works-blurb {
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+  
+  .how-it-works-blurb p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+  }
+  
+  .testimonials {
+    padding: 3rem 0;
+  }
+  
+  .testimonials h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .testimonials p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonials-content {
+    gap: 1.5rem;
+  }
+  
+  .single-photo {
+    height: 250px;
+  }
+  
+  .testimonial-text {
+    padding: 1.5rem;
+  }
+  
+  .testimonial-text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-text .author {
+    font-size: 0.9rem;
+  }
+  
+  .contact {
+    padding: 3rem 0;
+  }
+  
+  .contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-buttons {
+    gap: 1rem;
+  }
+  
+  .contact-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    min-width: 200px;
+  }
+  
+  .contact-info {
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .contact-info p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+  }
+  
+  .contact-info img {
+    max-width: 200px;
+  }
+  
+  .footer {
+    padding: 2rem 0;
+  }
+  
+  .footer p {
+    font-size: 0.85rem;
   }
 }
