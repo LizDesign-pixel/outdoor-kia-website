@@ -1,18 +1,284 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <script>
-  if (window.location.hostname === "lizdesign-pixel.github.io") {
-    window.location.href = "https://outdoor-kia.com";
-  }
-</script>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>丽游驿 Outdoor Kia – Private Guided Trips in China</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore hidden gems in and around Shanghai with Jack, your personal guide.">
+    <meta name="language" content="en">
+    <link rel="canonical" href="https://outdoor-kia.com/">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Outdoor Kia – Private Guided Trips in China</title>
+    <link rel="stylesheet" href="App.css?v=35">
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="App">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="丽游驿 Outdoor Kia" class="logo-img">
+                    <h1 id="title">丽游驿 Outdoor Kia</h1>
+                </div>
+                <nav class="navigation">
+                    <a href="#about" id="nav-about">About Jack</a>
+                    <a href="#experience" id="nav-experience">Experience</a>
+                    <a href="#feedback" id="nav-feedback">Feedback</a>
+                    <a href="#contact" id="nav-contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <button class="cta-button" id="hero-cta" onclick="scrollToSection('about')">Start Your Journey</button>
+                </div>
+            </section>
+
+            <!-- About Jack Section -->
+            <section id="about" class="about-jack">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="jack-image">
+                            <img src="Jack.png" alt="Jack Zhu" id="jack-photo">
+                        </div>
+                        <div class="jack-story">
+                            <h2 id="about-title">Meet Jack - Your Personal Guide</h2>
+                            <h3 id="jack-name">朱星宇 (Jack)</h3>
+                            <p id="jack-description">Hi! My name is Jack. I worked as a flight attendant for 8 years and now I'm a hotel manager. I'm a local Shanghainese and know the city inside out. In my free time, I enjoy hiking and capturing photos and videos of the places I explore.</p>
+                            <p id="jack-passion">I speak Shanghainese, Mandarin Chinese, and English fluently, and I can get by in Japanese and Korean too. There are so many amazing places to visit in and around Shanghai, and I'd love to share them with you. I take care of everything — all you need to do is join. Looking forward to meeting you in Shanghai!</p>
+                            <div class="jack-features">
+                                <div class="feature-box">
+                                    <div class="feature-icon">
+                                        <img src="Icons/clock-green.png?v=1" alt="Experience" class="icon-img">
+                                    </div>
+                                    <span id="feature1-text">8+ Years Experience</span>
+                                </div>
+                                <div class="feature-box">
+                                    <div class="feature-icon">
+                                        <img src="Icons/globe.png?v=1" alt="International" class="icon-img">
+                                    </div>
+                                    <span id="feature2-text">Fluent English & Chinese</span>
+                                </div>
+                                <div class="feature-box">
+                                    <div class="feature-icon">
+                                        <img src="Icons/star-green.png?v=1" alt="Luxury" class="icon-img">
+                                    </div>
+                                    <span id="feature3-text">Luxury Hospitality</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Exclusive Tour Experience Section -->
+            <section id="experience" class="features">
+                <div class="container">
+                    <h2 id="features-title">Exclusive Tour Experience</h2>
+                    <p id="features-subtitle">Why Choose Outdoor Kia</p>
+                    <div class="name-meaning">
+                        <p><em>Kia: Shanghainese for "go together." It's about shared journeys, stepping out of the city, and finding space beyond the noise.</em></p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <img src="Icons/map-marker.png?v=1" alt="Location" class="icon-img">
+                            </div>
+                            <h3 id="feature1">Insider Access</h3>
+                            <p id="feature1-desc">Discover hidden gems near Shanghai — like 安吉 Anji, 莫干山 Moganshan, 舟山 Zhoushan, 丽水 Lishui, and 上饶 Shangrao.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <img src="Icons/users.png?v=1" alt="Personal Attention" class="icon-img">
+                            </div>
+                            <h3 id="feature2">Private Attention</h3>
+                            <p id="feature2-desc">Jack drives, guides, and tailors every moment to you. No crowds. No confusion.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <img src="Icons/hand-holding-heart.png?v=1" alt="Care" class="icon-img">
+                            </div>
+                            <h3 id="feature3">Zero Stress</h3>
+                            <p id="feature3-desc">No planning. No language barrier. Just arrive and enjoy.</p>
+                        </div>
+                        <div class="feature-card">
+                                                            <div class="feature-icon">
+                                    <img src="Icons/box-heart.png?v=1" alt="Packages" class="icon-img">
+                                </div>
+                            <h3 id="feature4">Tailored Packages</h3>
+                            <p id="feature4-desc">Half-day escapes or multi-day adventures. Premium value, direct booking.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section id="feedback" class="testimonials">
+                <div class="container">
+                    <h2 id="testimonials-title">What Our Guests Say</h2>
+                    <p id="testimonials-subtitle">Real experiences from travelers who discovered authentic China</p>
+                    <div class="testimonials-content">
+                        <div class="testimonial-box">
+                            <div class="stars">★★★★★</div>
+                            <blockquote id="testimonial-text">"Everything was so well organised and I didn't have to worry about a thing! Jack took some lovely photos of me too. I can highly recommend his services!"</blockquote>
+                            <div class="testimonial-author">
+                                <strong id="author-name">Lisa D.</strong>
+                                <span id="author-location">Helsinki, Finland</span>
+                            </div>
+                        </div>
+                        <div class="single-photo">
+                            <img src="2FE5B759-F6EF-4E5B-BC08-C41B6C06187A_1_201_a.jpeg" alt="Travel collage" class="collage-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How It Works Section -->
+            <section class="how-it-works">
+                <div class="container">
+                    <h2 id="how-title">How It Works</h2>
+                    <div class="timeline">
+                        <div class="timeline-step">
+                            <div class="step-number">1</div>
+                            <h3 id="step1">Contact</h3>
+                            <p id="step1-desc">Reach out via WhatsApp, WeChat, or 小红书. Jack speaks fluent English and will guide you through setup.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-number">2</div>
+                            <h3 id="step2">Plan</h3>
+                            <p id="step2-desc">Share your interests. Jack builds a custom itinerary just for you.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-number">3</div>
+                            <h3 id="step3">Enjoy</h3>
+                            <p id="step3-desc">Land in Shanghai. Jack takes care of everything. You just explore, relax, and enjoy.</p>
+                        </div>
+                    </div>
+                    <div class="how-it-works-blurb">
+                        <p>We craft only a handful of journeys each month, because we believe in quality over quantity.</p>
+                        <p>If you're curious, reach out — spots fill up fast.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h2 id="contact">Ready to Explore China Without the Stress?</h2>
+                    <p id="contact-subtitle">Jack is your guide, translator, and travel concierge — all in one.<br>Connect now via WhatsApp, WeChat, or 小红书/Red Note.</p>
+                    <div class="contact-buttons">
+                        <button class="social-button wechat" id="wechat-btn" onclick="toggleContactInfo('wechat')">
+                            <span id="wechat-text">WeChat</span>
+                        </button>
+                        <button class="social-button xiaohongshu" id="xiaohongshu-btn" onclick="toggleContactInfo('xiaohongshu')">
+                            <span id="xiaohongshu-text">小红书</span>
+                        </button>
+                        <button class="social-button whatsapp" id="whatsapp-btn" onclick="toggleContactInfo('whatsapp')">
+                            <span id="whatsapp-text">WhatsApp</span>
+                        </button>
+                    </div>
+                    
+                    <!-- WeChat Contact Info -->
+                    <div id="wechat-info" class="contact-details" style="display: none;">
+                        <div class="contact-card">
+                            <h3>WeChat Contact</h3>
+                            <p><strong>Phone Number:</strong> +86 136 1189 0061</p>
+                            <p><strong>How to connect:</strong></p>
+                            <ul>
+                                <li>Add this number to your WeChat contacts</li>
+                                <li>Send a message to start chatting</li>
+                                <li>Available for voice and video calls</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Xiaohongshu Contact Info -->
+                    <div id="xiaohongshu-info" class="contact-details" style="display: none;">
+                        <div class="contact-card">
+                            <h3>Red Note Profile</h3>
+                            <div class="profile-info">
+                                <p><strong>Profile Name:</strong> 丽游驿 (Outdoor Kia)</p>
+                                <p><strong>Profile ID:</strong> 1688963419</p>
+                                <div class="qr-section">
+                                    <p><strong>Scan QR Code:</strong></p>
+                                    <div class="qr-image">
+                                        <img src="Icons/Red Note.png" alt="Red Note QR Code" style="max-width: 200px; height: auto; border-radius: 10px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="action-btn" onclick="window.open('https://www.xiaohongshu.com/user/profile/1688963419', '_blank')">Visit Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- WhatsApp Contact Info -->
+                    <div id="whatsapp-info" class="contact-details" style="display: none;">
+                        <div class="contact-card">
+                            <h3>WhatsApp Contact</h3>
+                            <p><strong>Phone Number:</strong> +358 45 232 5600</p>
+                            <p><strong>How to connect:</strong></p>
+                            <ul>
+                                <li>Click the button below to open WhatsApp</li>
+                                <li>Or add this number to your WhatsApp contacts</li>
+                                <li>Available for messaging, voice and video calls</li>
+                            </ul>
+                            <div class="action-buttons">
+                                <button class="action-btn" onclick="window.open('https://wa.me/358452325600', '_blank')">Open WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 丽游驿 Outdoor Kia. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Force cache refresh
+        if (performance.navigation.type === 1) {
+            localStorage.clear();
+        }
+        
+        // Additional cache busting
+        const cacheBuster = Date.now();
+
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+        
+        function toggleContactInfo(type) {
+            // Hide all contact details first
+            const allDetails = document.querySelectorAll('.contact-details');
+            allDetails.forEach(detail => {
+                detail.style.display = 'none';
+            });
+            
+            // Show the selected contact detail
+            const selectedDetail = document.getElementById(type + '-info');
+            if (selectedDetail) {
+                if (selectedDetail.style.display === 'none') {
+                    selectedDetail.style.display = 'block';
+                } else {
+                    selectedDetail.style.display = 'none';
+                }
+            }
+        }
+    </script>
   </body>
 </html>
